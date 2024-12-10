@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rund Knapp</title>
+    <style>
+        /* Midtstill knappen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
 
+       /* Stil for knappen */
+        #myButton {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Gjør knappen rund */
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        #output {
+            position: absolute;
+            top: 20px; 
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <button id="myButton">Trykk På Meg</button>
+   
     <p id="output"></p>
+
+
+    <button id="myButton">Trykk</button>
+
+
+    <button id="resetButton" style="background-color: #DC3545;">Reset</button>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
